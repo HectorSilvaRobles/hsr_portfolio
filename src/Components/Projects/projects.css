@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;;
+    /* min-height: 800px; */
 
 }
 
@@ -33,7 +34,7 @@
     background: #FCFCFC;
     height: 70%;
     width: 70%;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
     border-radius: 25px;
     border: solid 1px #D0CDCD;
@@ -43,6 +44,7 @@
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    /* min-height: 500px; */
 }
 
 
@@ -50,7 +52,6 @@
     height: 100%;
     width: 100%;
 }
-
 
 .projects-carousel {
     height: 15%;
@@ -62,7 +63,7 @@
     height: 100%;
 }
 .project-option > h1 {
-    font-size: 35px;
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (2000 - 300)));
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -72,7 +73,7 @@
 
 .project-option:focus, .project-option:focus {
     outline: none;
-    color: orange;
+    color: #FD4805;
 }
 
 
@@ -87,6 +88,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;;
+    /* min-height: 400px; */
+
 }
 
 .pc-real {
@@ -99,13 +102,12 @@
 
 
 .project-image {
-    background: orange;
     height: 95%;
     width: 30%;
 }
 
 .p-info {
-    background: red;
+    /* background: red; */
     height: 95%;
     width: 50%;
     display: flex;
@@ -114,43 +116,82 @@
 }
 .p-info > h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: calc(28px + (40 - 28) * ((100vw - 300px) / (2000 - 300)));
+
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
 }
 .p-info > p {
     margin: 20px 0;
-    font-size: 25px;
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (2000 - 300)));
     font-family: Arial, Helvetica, sans-serif;
-    width: 90%;
+    width: 100%;
 
 }
 
 .p-builtwith {
     height: 20%;
-    width: 90%;
-    background: blue;
+    width: 100%;
+    /* background: blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.p-bw-top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.p-bw-top > h1 {
+    font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (2000 - 300)));
+}
+.p-bw-bottom {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: flex-start;
+}
+.p-bw-bottom > h1 {
+    font-weight: 500;
+    margin: 0 20px;
+    font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (2000 - 300)));
 }
 
 .project-buttons {
     height: 25%;
     width: 90%;
-    background: green;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .project-buttons > button {
     border : none;
-    width: 40%;
+    width: 45%;
     height: 60%;
     border-radius: 100px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+.project-buttons > button > h1 {
+    margin-left: 15px;
+    font-size: calc(16px + (25 - 16) * ((100vw - 300px) / (2000 - 300)));
 }
 .project-buttons > button:focus {
     outline: none;
+}
+.view-live {
+    background: #FD4805;
+}
+.view-code {
+    background: #5D5D5D;
 }
 
 
@@ -162,6 +203,54 @@
     .projects-title{
         height: 10%;
         width: 90%;
+    }
+}
 
+/* Screen sizes width 1300px - 1000px */
+@media screen and (max-width: 1300px ) and (min-width: 1000px){
+    .projects-div {
+        width: 85%;
+        height: 65%;
+    }
+    .projects {
+        height: 90vh;
+    }
+}
+
+
+/* Screen sizes width 999px - 700px */
+@media screen and (max-width: 999px ) and (min-width: 700px){
+    .projects-div {
+        width: 90%;
+        
+    }
+    .projects {
+        height: 80vh;
+    }
+    .p-info {
+        width: 60%;
+        height: 90%;
+    }
+    .projects-carousel {
+        height: 10%;
+    }
+}
+
+
+/* Screen sizes width 699px - 500px */
+@media screen and (max-width: 699px ) and (min-width: 500px){
+    .projects-div {
+        width: 95%;
+        
+    }
+    .projects {
+        height: 80vh;
+    }
+    .p-info {
+        width: 60%;
+        height: 90%;
+    }
+    .projects-carousel {
+        height: 10%;
     }
 }
