@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {FaPlay, FaGithub} from 'react-icons/fa'
 import './projects.css'
 import Slider from 'react-slick'
 import '../../../node_modules/slick-carousel/slick/slick.css';
@@ -34,13 +35,13 @@ class Projects extends Component {
             focusOnSelect: true,
             responsive: [
                 {
-                    breakpoint: 1150,
+                    breakpoint: 1000,
                     settings : {
-                        slidesToShow: 3
+                        slidesToShow: 2
                     }
                 },
                 {
-                    breakpoint: 700,
+                    breakpoint: 600,
                     settings : {
                         slidesToShow: 1
                     }
@@ -54,7 +55,61 @@ class Projects extends Component {
                     <h2>Check out what I've built. </h2>
                 </div>
                 <div className='projects-div'>
+                    <div className='projects-carousel'>
+                        <Slider {...settings} asNavFor={this.state.nav1} ref={slider => (this.slider2 = slider)}>
+                            <div className='project-option'>
+                                <h1>COVID19 Tracker</h1>
+                            </div>
+                            <div className='project-option'>
+                                <h1>Around the world</h1>
+                            </div>
+                            <div className='project-option'>
+                                <h1>Son of Sam</h1>
+                            </div>
+                        </Slider>
+                    </div>
+                    <div className='projects-info'>
+                        <Slider asNavFor={this.state.nav2} ref={slider => (this.slider1 = slider)}>
+                            <div className='project-card'>
+                                <div className='pc-real'>
+                                    <div className='project-image'>
 
+                                    </div>
+                                    <div className='p-info'>
+                                        <h1>COVID-19 Tracker</h1>
+                                        <p>This is the description for the COVID-19 live tracker. This should be at least 3 sentences. So write something simple, short, and good. </p>
+                                        <div className='p-builtwith'>
+                                            <div className='p-bw-top'>
+                                                <h1>Built With</h1>
+                                            </div>
+                                            <div className='p-bw-bottom'>
+                                                <h1>- React</h1>
+                                                <h1>- Firebase</h1>
+                                                <h1>- Deck.gl</h1>
+                                            </div>
+                                            
+                                        </div>
+                                        <div className='project-buttons'>
+                                            <button className='view-live'>
+                                                <FaPlay size={25} />
+                                                <h1>View Live</h1>
+                                            </button>
+                                            <button className='view-code'>
+                                                <FaGithub size={30} />
+                                                <h1>View Code</h1>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='project-card'>
+                                <h1>im feeling rough</h1>
+                            </div>
+                            <div className='project-card'>
+                                <h1>Ive got to maintain</h1>
+                            </div>
+                        </Slider>
+                    </div>
                 </div>
             </div>
         )
