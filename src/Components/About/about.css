@@ -1,5 +1,132 @@
 .about {
-    background: orange;
-    height: 90vh;
+    background: black;
+    height: 110vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title {
+    /* background: orange; */
+    height: 10%;
+    width: 80%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-title > h1 {
+    margin: 0;
+    padding: 0;
+    font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1800 - 300)));
+}
+.about-title > h2 {
+    margin: 0;
+    padding: 0;
+    font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1800 - 300)));
+    font-weight: 500;
+}
+
+
+.about-body {
+    margin-top: 30px;
+    /* background: green; */
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.about-image {
+    height: 250px;
+    width: 250px;
+    background: white;
+    border-radius: 50%;
+}
+
+.about-body > p {
+    color: white;
+    font-style: italic;
+    text-align: center;
+    width: 75%;
+    margin: 35px 0;
+    font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (2000 - 300)));
+}
+
+.about-links {
+    /* background: yellow; */
+    width: 70%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-links > button {
+    height: 80%;
+    width: 25%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.linkedin {
+    background: #2867B2;
+    color: white;
+}
+.resume {
+    background: #FD4805;
+    color: white
+}
+.linkedin > h1, .github > h1, .resume > h1 {
+    margin-left: 10px;
+    font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1800 - 300)));
+}
+
+
+@media screen and (max-width: 1200px) {
+    .about-body {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .about-body > p {
+        width: 90%;
+    }
+    .about-links {
+        width: 90%;
+    }
+    .about-links > button {
+        width: 28%;
+    }
+
+    .about-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-links {
+        flex-direction: column;
+        height: 35%;
+    }
+
+    .about-links > button {
+        height: 25%;
+        width: 90%;
+    }
+    .about-body {
+        height: 80%;
+        margin-top: 0;
+    }
 }

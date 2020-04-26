@@ -210,7 +210,6 @@
 @media screen and (max-width: 1300px ) and (min-width: 1000px){
     .projects-div {
         width: 85%;
-        height: 65%;
     }
     .projects {
         height: 90vh;
@@ -237,20 +236,64 @@
 }
 
 
-/* Screen sizes width 699px - 500px */
-@media screen and (max-width: 699px ) and (min-width: 500px){
+/* Screen sizes width 699px - 300px */
+@media screen and (max-width: 699px ) and (min-width: 300px){
     .projects-div {
         width: 95%;
-        
+        height: 85%;
     }
     .projects {
-        height: 80vh;
+        height: 110vh;
     }
     .p-info {
-        width: 60%;
-        height: 90%;
+        width: 90%;
+        height: 60%;
     }
     .projects-carousel {
         height: 10%;
+    }
+
+    .pc-real {
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    .project-card {
+        height: 100%;
+    }
+
+    .project-image {
+        height: 40%;
+    }
+    .project-info {
+        height: 100%;
+    }
+    .project-buttons {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1800px){
+    .project-buttons > button > h1 {
+        font-size: 35px;
+    }
+
+    .p-bw-bottom > h1 {
+        font-size: 38px;
+    }
+
+    .p-bw-top > h1 {
+        font-size: 45px;
+    }
+    .p-info > p {
+        font-size: 45px;
+    }
+    .p-info > h1 {
+        font-size: 60px;
+    }
+
+    .project-option > h1 {
+        font-size: 40px;
     }
 }
