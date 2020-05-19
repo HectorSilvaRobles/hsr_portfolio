@@ -6,9 +6,9 @@ import ReactIcon from '../../media/reacticon.png'
 import Javascript from '../../media/javascripticon.png'
 import Mongoodb from '../../media/mongoicon.png'
 import Redux from '../../media/redux.png'
-import CSS from '../../media/cssicon.png'
+import CSS from '../../media/css3.png'
 import Adobe from '../../media/adobexdicon.png'
-import AWS from '../../media/awsicon.png'
+import AWS from '../../media/aws-logo.png'
 import Firebase from '../../media/firebase.png'
 
 class Skills extends Component {
@@ -26,35 +26,29 @@ class Skills extends Component {
             focusOnSelect: true,
             infinite: true,
             slidesToShow: 3,
+            slidesToScroll: 1,
+            initialSlide: 0,
             speed: 500,
             autoplay: true,
             swipeToSlide: true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 2000,
             responsive: [
+                
                 {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                  }
-                },
-                {
-                  breakpoint: 600,
+                  breakpoint: 1080,
                   settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                  }
-                },
-                {
-                  breakpoint: 480,
-                  settings: {
-                    slidesToShow: 1,
                     slidesToScroll: 1
                   }
-                }
+                },
+
+                {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  }
               ]
         };
 
@@ -69,7 +63,9 @@ class Skills extends Component {
                         <div className='skill-box'>
                             <div className='skill-card'>
                                 <div className='skill-card-top'>
-                                    <img src={Nodejs} alt='nodejs' />
+                                    <div className='skill-card-img'>
+                                        <img src={Nodejs} alt='nodejs' />
+                                    </div>
                                     <h1> NodeJs</h1>
                                 </div>
                             </div>
@@ -77,67 +73,85 @@ class Skills extends Component {
                         <div className='skill-box'>
                             <div className='skill-card'>
                                 <div className='skill-card-top'>
+                                    <div className='skill-card-img'>
                                         <img src={ReactIcon} alt='react' />
-                                        <h1>ReactJs</h1>
                                     </div>
-                                </div>
-                        </div>
-                        <div className='skill-box'>
-                            <div className='skill-card'>
-                                <div className='skill-card-top'>
-                                        <img src={Javascript} alt='javascript' />
-                                        <h1>Javascript</h1>
+                                    <h1>ReactJs</h1>
                                 </div>
                             </div>
                         </div>
                         <div className='skill-box'>
                             <div className='skill-card'>
                                 <div className='skill-card-top'>
-                                        <img src={Mongoodb} alt='mongoodb' />
-                                        <h1>MongoDB</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='skill-box'>
-                            <div className='skill-card'>
-                                <div className='skill-card-top'>
-                                        <img src={Redux} alt='redux' />
-                                        <h1>Redux</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='skill-box'>
-                            <div className='skill-card'>
-                                <div className='skill-card-top'>
-                                        <img src={CSS} alt='css' />
-                                        <h1>CSS</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='skill-box'>
-                            <div className='skill-card'>
-                                <div className='skill-card-top'>
-                                        <img src={Adobe} alt='adobexd' />
-                                        <h1>AdobeXD</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='skill-box'>
-                            <div className='skill-card'>
-                                <div className='skill-card-top'>
+                                    <div className='skill-card-img'>
                                         <img src={Firebase} alt='firebase' />
-                                        <h1>Firebase</h1>
+                                    </div>
+                                    <h1>Firebase</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='skill-box'>
+                            <div className='skill-card'>
+                                <div className='skill-card-top bigger'>
+                                    <div className='skill-card-img'>
+                                        <img src={AWS} alt='aws' />
+                                    </div>
+                                    <h1>AWS</h1>
                                 </div>
                             </div>
                         </div>
                         <div className='skill-box'>
                             <div className='skill-card'>
                                 <div className='skill-card-top'>
-                                        <img src={AWS} alt='aws' />
-                                        <h1>AWS</h1>
+                                    <div className='skill-card-img'>
+                                        <img src={Mongoodb} alt='mongoodb' />
+                                    </div>
+                                    <h1>MongoDB</h1>
                                 </div>
                             </div>
                         </div>
+                        <div className='skill-box'>
+                            <div className='skill-card'>
+                                <div className='skill-card-top'>
+                                    <div className='skill-card-img'>
+                                        <img src={Javascript} alt='javascript' />
+                                    </div>
+                                    <h1>Javascript</h1>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className='skill-box'>
+                            <div className='skill-card'>
+                                <div className='skill-card-top'>
+                                    <div className='skill-card-img'>
+                                        <img src={Redux} alt='redux' />
+                                    </div>
+                                    <h1>Redux</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='skill-box'>
+                            <div className='skill-card'>
+                                <div className='skill-card-top'>
+                                    <div className='skill-card-img'>
+                                        <img src={CSS} alt='css' />
+                                    </div>
+                                     <h1>CSS</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='skill-box'>
+                            <div className='skill-card'>
+                                <div className='skill-card-top'>
+                                    <div className='skill-card-img'>
+                                        <img src={Adobe} alt='adobexd' />
+                                    </div>
+                                    <h1>AdobeXD</h1>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </Slider>
                 </div>
             </div>
