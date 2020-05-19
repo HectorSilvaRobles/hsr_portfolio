@@ -1,6 +1,6 @@
 .about {
     background: black;
-    height: 110vh;
+    height: 1000px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
 
 .about-title {
     /* background: orange; */
-    height: 10%;
+    height: 150px;
     width: 80%;
     color: white;
     display: flex;
@@ -26,7 +26,7 @@
 .about-title > h2 {
     margin: 0;
     padding: 0;
-    font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1800 - 300)));
+    font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 500;
 }
 
@@ -34,12 +34,11 @@
 .about-body {
     margin-top: 30px;
     /* background: green; */
-    height: 60%;
+    height: 600px;
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex-direction: column;
 }
 
@@ -55,13 +54,13 @@
     font-style: italic;
     text-align: center;
     width: 75%;
-    margin: 35px 0;
+    margin: 50px 0;
     font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (2000 - 300)));
 }
 
 .about-links {
     /* background: yellow; */
-    width: 70%;
+    width: 80%;
     height: 15%;
     display: flex;
     justify-content: space-between;
@@ -115,7 +114,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .about-links {
         flex-direction: column;
         height: 35%;
@@ -128,5 +127,53 @@
     .about-body {
         height: 80%;
         margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1800px){
+    .about {
+        height: 100vh;
+    }
+
+    .about-body {
+        height: 60%;
+    }
+
+    .about-image {
+        height: 400px;
+        width: 400px;
+        background: white;
+        border-radius: 50%;
+    }
+
+    .about-links > button {
+        height: 80%;
+        width: 25%;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+    }
+    .about-links > button > h1 {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+    .about-links > button > svg {
+        width: 50px;
+        height: 50px;
+    }
+    .about-body > p {
+        width: 75%;
+        margin: 70px 0;
+        font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (2000 - 300)));
+    }
+
+    .about-title > h1 {
+        font-size: calc(50px + (100 - 50) * ((100vw - 300px) / (2000 - 300)));
+    }
+
+    .about-title > h2 {
+        font-size: calc(40px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
     }
 }
