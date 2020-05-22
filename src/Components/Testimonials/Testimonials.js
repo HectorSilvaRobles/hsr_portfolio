@@ -10,7 +10,7 @@ class Testimonials extends Component {
         return(
             <div className='testimonials'>
                 <div className='testimonials-title'>
-                    <h1>My Testimonials</h1>
+                    <h1>Testimonials</h1>
                     <h2>See what people have to say.</h2>
                 </div>
                 <div className='testimonials-body'>
