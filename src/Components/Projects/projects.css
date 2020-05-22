@@ -198,7 +198,7 @@
     /* background: red; */
     justify-content: flex-start;
 }
-.p-bw-bottom > h1 {
+.p-bw-bottom >  h1 {
     font-weight: 500;
     margin: 0 20px;
     font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1700 - 300)));
@@ -224,9 +224,18 @@
     color: white;
 
 }
-.project-buttons > button > h1 {
+.project-buttons > button > a >h1 {
     margin-left: 15px;
     font-size: calc(16px + (25 - 16) * ((100vw - 300px) / (2000 - 300)));
+}
+.project-buttons > button > a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 .project-buttons > button:focus {
     outline: none;
