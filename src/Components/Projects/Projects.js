@@ -1,5 +1,10 @@
 import React, {Component} from 'react';
 import {FaPlay, FaGithub} from 'react-icons/fa'
+import covTracker from '../../media/covscreen.png'
+import reactIcon from '../../media/reacticon.png'
+import fireBaseIcon from '../../media/firebase.png'
+
+
 import './projects.css'
 import Slider from 'react-slick'
 import '../../../node_modules/slick-carousel/slick/slick.css';
@@ -26,16 +31,17 @@ class Projects extends Component {
 
         const settings = {
             className: 'center',
-            centerMode: true,
+            // centerMode: true,
             infinite: true,
-            centerPadding: '50px',
+            arrows: false,
+            dots: true,
             slidesToShow: 3,
             speed: 500,
             swipeToSlide: true,
             focusOnSelect: true,
             responsive: [
                 {
-                    breakpoint: 1000,
+                    breakpoint: 900,
                     settings : {
                         slidesToShow: 2
                     }
@@ -48,6 +54,8 @@ class Projects extends Component {
                 }
             ]
         }
+
+        console.log(this.state)
         return (
             <div className='projects'>
                 <div className='projects-title'>
@@ -69,11 +77,11 @@ class Projects extends Component {
                         </Slider>
                     </div>
                     <div className='projects-info'>
-                        <Slider asNavFor={this.state.nav2} ref={slider => (this.slider1 = slider)}>
+                        <Slider asNavFor={this.state.nav2} ref={slider => (this.slider1 = slider)} className='project-slider'>
                             <div className='project-card'>
                                 <div className='pc-real'>
                                     <div className='project-image'>
-
+                                        <img src={covTracker} />
                                     </div>
                                     <div className='p-info'>
                                         <h1>COVID-19 Tracker</h1>
@@ -83,9 +91,12 @@ class Projects extends Component {
                                                 <h1>Built With</h1>
                                             </div>
                                             <div className='p-bw-bottom'>
-                                                <h1>- React</h1>
-                                                <h1>- Firebase</h1>
-                                                <h1>- Deck.gl</h1>
+                                                <div className='tech-icon'>
+                                                    <img src={reactIcon} alt='react' />
+                                                </div>
+                                                <div className='tech-icon'>
+                                                    <img src={fireBaseIcon} alt='firebase' />
+                                                </div>
                                             </div>
                                             
                                         </div>
