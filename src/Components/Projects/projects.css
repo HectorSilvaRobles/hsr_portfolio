@@ -387,6 +387,7 @@
     .projects-div {
         height: 1000px;
     }
+    
     .project-card {
         height: 800px;
         /* background: green; */
@@ -399,7 +400,7 @@
         height: 100%;
     }
     .projects {
-        height: 1500px;
+        height: 1800px;
     }
     .project-buttons > button > h1 {
         font-size: 35px;
