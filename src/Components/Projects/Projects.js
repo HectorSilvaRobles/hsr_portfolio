@@ -3,6 +3,7 @@ import {FaPlay, FaGithub} from 'react-icons/fa'
 import covTracker from '../../media/covscreen.png'
 import reactIcon from '../../media/reacticon.png'
 import fireBaseIcon from '../../media/firebase.png'
+import {Redirect} from 'react-router-dom'
 
 
 import './projects.css'
@@ -16,7 +17,10 @@ class Projects extends Component {
 
         this.state = {
             nav1: null,
-            nav2: null
+            nav2: null,
+            redirect: false,
+            covTrackerSite: false,
+            covTrackerGit: false,
         }
     }
 
@@ -27,11 +31,14 @@ class Projects extends Component {
         })
     }
 
+    setRedirect = () => {
+        this.setState({redirect: true})
+    }
+
     render( ){
 
         const settings = {
             className: 'center',
-            // centerMode: true,
             infinite: true,
             arrows: false,
             dots: true,
@@ -101,13 +108,17 @@ class Projects extends Component {
                                             
                                         </div>
                                         <div className='project-buttons'>
-                                            <button className='view-live'>
-                                                <FaPlay size={25} />
-                                                <h1>View Live</h1>
+                                            <button className='view-live' >
+                                                <a href='http://covtracker.xyz'>
+                                                    <FaPlay size={25} />
+                                                    <h1>View Live</h1>
+                                                </a>
                                             </button>
                                             <button className='view-code'>
-                                                <FaGithub size={30} />
-                                                <h1>View Code</h1>
+                                                <a href='https://github.com/HectorSilvaRobles/COVID19_Tracker'>
+                                                    <FaGithub size={30} />
+                                                    <h1>View Code</h1>
+                                                </a>
                                             </button>
                                         </div>
                                     </div>
