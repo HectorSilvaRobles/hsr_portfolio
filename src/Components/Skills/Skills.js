@@ -53,7 +53,7 @@ class Skills extends Component {
         };
 
         return (
-            <div className='skills'>
+            <div className='skills' id='skills'>
                 <div className='skills-title'>
                     <h1>What I Know</h1>
                     <h2>Technologies I've worked with, so far.</h2>

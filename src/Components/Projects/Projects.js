@@ -62,9 +62,8 @@ class Projects extends Component {
             ]
         }
 
-        console.log(this.state)
         return (
-            <div className='projects'>
+            <div className='projects' id='projects'>
                 <div className='projects-title'>
                     <h1>See My Work</h1>
                     <h2>Check out what I've built. </h2>

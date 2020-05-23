@@ -8,7 +8,7 @@ class Testimonials extends Component {
 
     render(){
         return(
-            <div className='testimonials'>
+            <div className='testimonials' id='testimonials'>
                 <div className='testimonials-title'>
                     <h1>Testimonials</h1>
                     <h2>See what people have to say.</h2>
