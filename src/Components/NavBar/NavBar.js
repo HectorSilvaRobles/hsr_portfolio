@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './navbar.css'
 import Logo from '../../media/HSR-copy.png'
 import {Link} from 'react-scroll'
+import ToggleButton from './Hamburger/Togglebutton/ToggleButton'
 
 class NavBar extends Component {
     constructor(props){
@@ -52,7 +53,9 @@ class NavBar extends Component {
                     offset={-70}
                     duration= {500}>About</Link>
                 </div>
-
+                <div className='togglebutton'>
+                    <ToggleButton />
+                </div>
             </div>
         )
     }

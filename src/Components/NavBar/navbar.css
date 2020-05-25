@@ -1,5 +1,5 @@
 .navbar {
-    height: 10vh;
+    height: 70px;
     width: 100%;
     background: black;
     display: flex;
@@ -11,7 +11,7 @@
 .nav-logo {
     /* background: blue; */
     height: 100%;
-    width: 30%;
+    width: 20%;
 }
 
 .nav-logo > img {
@@ -20,6 +20,19 @@
 
 .nav-links {
     height: 100%;
-    width: 50%;
-    background: green;
+    width: 60%;
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-links > a {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1800 - 300)));
+}
+.nav-links > a:active, .nav-links > a:focus, .nav-links > a:fo {
+    color: red;
 }
