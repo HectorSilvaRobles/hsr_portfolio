@@ -2,15 +2,33 @@ import React, {Component} from 'react';
 import './navbar.css'
 import Logo from '../../media/HSR-copy.png'
 import {Link} from 'react-scroll'
+import Backdrop from './Hamburger/Backdrop/Backdrop'
 import ToggleButton from './Hamburger/Togglebutton/ToggleButton'
 
 class NavBar extends Component {
     constructor(props){
         super(props)
 
-        this.state = {}
+        this.state = {
+            drawerOpen: false
+        }
+    }
+
+    // For toggling hamburger menu
+    drawerToggleClick = () => {
+        this.setState((prevState) => {
+            return {drawerOpen: !prevState.drawerOpen}
+        })
+    }
+
+    backdropClick = () => {
+        this.setState({drawerOpen: false})
     }
     render(){
+        let backdrop;
+        if(this.state.drawerOpen){
+            backdrop = <Backdrop click={this.backdropClick} />
+        }
         return (
             <div className='navbar'>
                 <div className='nav-logo'>
