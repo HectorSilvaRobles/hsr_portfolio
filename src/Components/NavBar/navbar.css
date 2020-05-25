@@ -36,3 +36,26 @@
 .nav-links > a:active, .nav-links > a:focus, .nav-links > a:fo {
     color: red;
 }
+
+.togglebutton {
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1001px){
+    .togglebutton {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .nav-links {
+        display: none;
+    }
+    .togglebutton {
+        width: 50%;
+        justify-content: flex-end;
+    }
+}
