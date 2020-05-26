@@ -1,8 +1,28 @@
+
 .drawer {
-    height: 200px;
-    background: black;
-    position:fixed;
-    top: 70px;
-    width: 100%;
-    
+    height: 300px;
+    background: white;
+    position: absolute;;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    -webkit-transform: translateY(-100%);
+    cursor: pointer;
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    -webkit-overflow-scrolling: auto !important;
+}
+
+.drawer.open {
+    transform: translateY(70px);
+    -webkit-transform: translateY(70px)
+}
+
+.drawer > a {
+    color: black;
 }
