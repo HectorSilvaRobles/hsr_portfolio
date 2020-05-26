@@ -9,10 +9,13 @@
 }
 
 
+
 .nav-logo {
     /* background: blue; */
     height: 100%;
     width: 20%;
+    z-index: 15;
+
 }
 
 .nav-logo > img {

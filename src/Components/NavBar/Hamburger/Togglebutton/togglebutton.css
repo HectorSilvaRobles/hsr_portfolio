@@ -9,6 +9,7 @@
     width: 50px;
     padding: 0;
     box-sizing: border-box;
+    z-index: 15;
     /* margin-left: 25px; */
     /* background: red; */
 }

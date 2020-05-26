@@ -1,17 +1,18 @@
 
 .drawer {
-    height: 300px;
-    background: white;
+    height: 400px;
+    background: black;
     position: absolute;;
+    z-index: 5;
     top: 0px;
     left: 0;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    z-index: 5;
+    flex-direction: column;
     -webkit-transform: translateY(-100%);
-    cursor: pointer;
+    /* cursor: pointer; */
     transform: translateY(-100%);
     -webkit-transition: -webkit-transform 0.5s ease-out;
     transition: transform 0.5s ease-out;
@@ -24,5 +25,8 @@
 }
 
 .drawer > a {
-    color: black;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    /* margin: 20px 0; */
 }
