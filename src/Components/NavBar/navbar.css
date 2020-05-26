@@ -5,8 +5,9 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    z-index: 5;
+    z-index: 11; 
 }
+
 
 .nav-logo {
     /* background: blue; */
