@@ -37,7 +37,7 @@
     cursor: pointer;
     font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1800 - 300)));
 }
-.nav-links > a:active, .nav-links > a:focus, .nav-links > a:fo {
+.nav-links > a:active, .nav-links > a:focus, .nav-links > a:focus {
     color: red;
 }
 
@@ -61,5 +61,15 @@
     .togglebutton {
         width: 50%;
         justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1900px){
+    .navbar{
+        height: 150px;
+    }
+    .nav-links > a {
+        
+        font-size: calc(25px + (30 - 25) * ((100vw - 300px) / (1800 - 300)));
     }
 }

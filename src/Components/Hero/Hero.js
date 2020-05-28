@@ -11,6 +11,26 @@ class Hero extends Component {
     render(){
         return (
             <div className='hero' id='hero'>
+                <div className='hero-section1'>
+                    <div className='hero-section1-image'>
+
+                    </div>
+                    <div className='hero-section1-info'>
+                        <h1>Hello, <br></br>Allow me to introduce myself.</h1>
+                    </div>
+                </div>
+                <div className='hero-section2'>
+                    <div className='hero-section2-info'>
+                        <h1>I am a software Engineer.</h1>
+                        <h2>Looking to begin a new career.</h2>
+                    </div>
+                    <div className='hero-section2-image'>
+                    </div>
+
+                </div>
+                <div className='hero-section3'>
+
+                </div>
 
             </div>
         )

@@ -1,6 +1,76 @@
 .hero {
-    height: 90vh;
     width: 100%;
-    background: red;
+    background: #f5f5f5;
     margin-top: 70px;
+}
+
+.hero-section1 {
+    /* background: red; */
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section1-image {
+    background: orange;
+    height: 70%;
+    width: 40%;
+}
+.hero-section1-info {
+    /* background: pink; */
+    height: 70%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+.hero-section1-info > h1 {
+    font-size: calc(60px + (100 - 60) * ((100vw - 1000px) / (2000 - 1000)));
+    text-transform: uppercase;
+    padding-left: 50px;
+}
+
+
+
+.hero-section2 {
+    /* background: blue; */
+    height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-section2-info {
+    /* background: red; */
+    height: 65%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.hero-section2-info > h1 {
+    margin: 0;
+    font-size: calc(60px + (100 - 60) * ((100vw - 1000px) / (2000 - 1000)));
+    text-transform: uppercase;
+}
+.hero-section2-info > h2 {
+    margin: 20px 0;
+    font-size: calc(30px + (50 - 30) * ((100vw - 1000px) / (2000 - 1000)));
+    font-weight: 500;
+    width: 80%;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.hero-section2-image {
+    background: orange;
+    height:65%;
+    width: 45%;
+}
+
+.hero-section3 {
+    background: green;
+    height: 900px;
+    width: 100%;
 }
