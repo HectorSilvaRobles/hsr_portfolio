@@ -70,7 +70,42 @@
 }
 
 .hero-section3 {
-    background: green;
-    height: 900px;
+    /* background: green; */
+    height: 1000px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section3-image {
+    background: orange;
+    height: 20%;
+    width: 70%;
+}
+
+.hero-section3-info {
+    /* background: blue; */
+    height: 40%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section3-info > h1 {
+    margin: 0;
+    font-size: calc(100px + (200 - 100) * ((100vw - 1000px) / (2000 - 1000)));
+    text-transform: uppercase;
+}
+.hero-section3-info > h2 {
+    margin: 0;
+    font-size: calc(30px + (50 - 30) * ((100vw - 1000px) / (2000 - 1000)));
+    font-weight: 500;
+    width: 90%;
+    text-transform: capitalize;
+    font-style: italic;
+    text-align: center;
 }
