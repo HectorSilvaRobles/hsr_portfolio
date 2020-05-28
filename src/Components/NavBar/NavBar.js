@@ -75,7 +75,7 @@ class NavBar extends Component {
                 </div>
                 <div className='togglebutton'>
                     <ToggleButton click={this.drawerToggleClick} />
-                    <SideDrawer show={this.state.drawerOpen} className='sidedrawer' />
+                    <SideDrawer show={this.state.drawerOpen} click={this.drawerToggleClick} />
                     {backdrop}
                 </div>
             </div>
