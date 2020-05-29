@@ -159,6 +159,7 @@
 
     .hero-section2 {
         /* background: red; */
+        margin: 80px 0;
         flex-direction: column;
     }
     .hero-section2-info {
@@ -239,7 +240,8 @@
 
     .hero-section2 {
         flex-direction: column;
-        margin-top: 100px;
+        margin: 100px 0px;
+        height: 800px
     }
 
     .hero-section2-info {
@@ -264,7 +266,8 @@
         display: flex;
         justify-content: center;
         object-fit: cover;;
-        margin-top: 100px;
+        margin-top: 50px;
+
     }
     .hero-section2-image > img {
         width: 500px;
@@ -308,5 +311,12 @@
     }
     .hero-section2-image {
         width: 40%;
+    }
+}
+
+
+@media screen and (min-width: 1900px){
+    .hero-section1, .hero-section2, .hero-section3 {
+        height: 1300px;
     }
 }
