@@ -13,11 +13,19 @@
     align-items: center;
 }
 
+
 .hero-section1-image {
-    background: orange;
     height: 70%;
-    width: 40%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
 }
+
+.hero-section1-image > img {
+    /* width: 100%; */
+    height: 100%;
+}
+
 .hero-section1-info {
     /* background: pink; */
     height: 70%;
@@ -35,7 +43,7 @@
 
 .hero-section2 {
     /* background: blue; */
-    height: 900px;
+    height: 800px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -44,7 +52,7 @@
 .hero-section2-info {
     /* background: red; */
     height: 65%;
-    width: 40%;
+    width:40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,14 +72,19 @@
     font-style: italic;
 }
 .hero-section2-image {
-    background: orange;
+    /* background: orange; */
     height:65%;
-    width: 45%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.hero-section2-image > img {
+    width: 100%;
 }
 
 .hero-section3 {
     /* background: green; */
-    height: 1000px;
+    height: 900px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -80,9 +93,16 @@
 }
 
 .hero-section3-image {
-    background: orange;
-    height: 20%;
-    width: 70%;
+    /* background: orange; */
+    height: 25%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section3-image > img {
+    /* width: 50vw; */
+    height: 100%;
 }
 
 .hero-section3-info {
@@ -108,4 +128,141 @@
     text-transform: capitalize;
     font-style: italic;
     text-align: center;
+}
+
+
+@media screen and (max-width: 600px){
+    .hero-section1 {
+        /* background: blue; */
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-section1-image {
+        height: 50%;
+        width: 95%;
+    }
+    .hero-section1-image > img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .hero-section1-info {
+        height: 30%;
+        width: 95%;
+        /* background: red; */
+    }
+    .hero-section1-info > h1 {
+        padding: 0;
+        text-align: center;
+        font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (600 - 300)));
+    }
+
+    .hero-section2 {
+        /* background: red; */
+        flex-direction: column;
+    }
+    .hero-section2-info {
+        width: 95%;
+        height: 30%;
+        /* background: orange; */
+        align-items: center;
+    }
+    .hero-section2-info > h1 {
+        text-align: center;
+        font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (600 - 300)));
+    }
+    .hero-section2-info > h2 {
+        text-align: center;
+        margin: 10px 0;
+        z-index: 1;
+        font-size: calc(25px + (30 - 25) * ((100vw - 300px) / (600 - 300)));
+    }
+
+    .hero-section2-image {
+        height: 50%;
+        width: 95%;
+    }
+
+    .hero-section2-image > img {
+        width: 100%;
+    }
+
+    .hero-section3 {
+        height: 700px
+    }
+
+    .hero-section3-info {
+        height: 50%;
+        width: 95%;
+    }
+
+    .hero-section3-info > h1 {
+        text-align: center;
+        font-size: calc(60px + (100 - 60) * ((100vw - 300px) / (600 - 300)));
+    }
+
+    .hero-section3-info > h2 {
+        text-align: center;
+        margin: 10px 0;
+        font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (600 - 300)));
+    }
+
+    .hero-section3-image {
+        height: 25%;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) and (min-width: 601px){
+    .hero-section1 {
+        flex-direction: column-reverse;
+    }
+    .hero-section1-info {
+        width: 90%;
+        height: 30%;
+    }
+    .hero-section1-info > h1 {
+        padding: 0;
+        text-align: center;
+        font-size: calc(55px + (60 - 55) * ((100vw - 601px) / (900 - 601)));
+    }
+    .hero-section1-image {
+        height: 60%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-section2 {
+        flex-direction: column;
+    }
+
+    .hero-section2-info {
+        width: 80%;
+        height: 25%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-section2-info > h1 {
+        margin: 0;
+        font-size: calc(55px + (60 - 55) * ((100vw - 601px) / (900 - 601)));
+    }
+    .hero-section2-info > h2 {
+        margin: 10px 0;
+        font-size: calc(25px + (35 - 25) * ((100vw - 601px) / (900 - 601)));
+    }
+
+    .hero-section2-image {
+        width: 70%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        object-fit: cover;;
+    }
+    .hero-section2-image > img {
+        /* height: 100%; */
+        width: 450px;
+
+    }
 }
