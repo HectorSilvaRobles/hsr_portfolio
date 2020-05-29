@@ -16,14 +16,15 @@
 
 .hero-section1-image {
     height: 70%;
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: flex-end;
 }
 
 .hero-section1-image > img {
-    /* width: 100%; */
-    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* height: 100%; */
 }
 
 .hero-section1-info {
@@ -43,7 +44,7 @@
 
 .hero-section2 {
     /* background: blue; */
-    height: 800px;
+    height: 700px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -72,9 +73,8 @@
     font-style: italic;
 }
 .hero-section2-image {
-    /* background: orange; */
     height:65%;
-    width: 30%;
+    width: 40%;
     display: flex;
     align-items: center;
 }
@@ -214,7 +214,7 @@
 
 
 
-@media screen and (max-width: 900px) and (min-width: 601px){
+@media screen and (max-width: 1000px) and (min-width: 601px){
     .hero-section1 {
         flex-direction: column-reverse;
     }
@@ -229,12 +229,17 @@
     }
     .hero-section1-image {
         height: 60%;
-        width: 100%;
+        width: 70%;
         justify-content: center;
+    }
+
+    .hero-section1-image > img {
+        width: 500px;
     }
 
     .hero-section2 {
         flex-direction: column;
+        margin-top: 100px;
     }
 
     .hero-section2-info {
@@ -255,14 +260,53 @@
 
     .hero-section2-image {
         width: 70%;
-        height: 60%;
+        height: 50%;
         display: flex;
         justify-content: center;
         object-fit: cover;;
+        margin-top: 100px;
     }
     .hero-section2-image > img {
-        /* height: 100%; */
-        width: 450px;
+        width: 500px;
+    }
 
+    .hero-section3-image {
+        height:  20%;
+    }
+
+    .hero-section3-info > h1 {
+        font-size: calc(70px + (100 - 70) * ((100vw - 601px) / (900 - 601)));
+    }
+}
+
+@media screen and (max-width: 1250px) and (min-width: 1001px){
+    .hero-section1 {
+        height: 700px;
+    }
+    .hero-section1-info {
+        width: 40%;
+        justify-content: center;
+    }
+
+    .hero-section1-image {
+        width: 45%;
+        justify-content: center;
+        height: 80%;
+    }
+    .hero-section1-image > img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .hero-section1-info > h1 {
+        font-size: calc(50px + (55 - 50) * ((100vw - 901px) / (1250 - 901)));
+        /* padding-left: 30px;; */
+
+    }
+
+    .hero-section2 {
+        height: 700px;
+    }
+    .hero-section2-image {
+        width: 40%;
     }
 }
