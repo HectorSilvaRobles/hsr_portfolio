@@ -4,11 +4,11 @@ import Slider from 'react-slick'
 import Nodejs from '../../media/nodeicon.png'
 import ReactIcon from '../../media/reacticon.png'
 import Javascript from '../../media/javascripticon.png'
-import Mongoodb from '../../media/mongoicon.png'
+import Mongoodb from '../../media/mongo.png'
 import Redux from '../../media/redux.png'
 import CSS from '../../media/css3.png'
 import Adobe from '../../media/adobexdicon.png'
-import AWS from '../../media/aws-logo.png'
+import AWS from '../../media/aws.png'
 import Firebase from '../../media/firebase.png'
 
 class Skills extends Component {
@@ -84,12 +84,13 @@ class Skills extends Component {
                             <div className='skill-card'>
                                 <div className='skill-card-top'>
                                     <div className='skill-card-img'>
-                                        <img src={Firebase} alt='firebase' />
+                                        <img src={Mongoodb} alt='mongoodb' />
                                     </div>
-                                    <h1>Firebase</h1>
+                                    <h1>MongoDB</h1>
                                 </div>
                             </div>
                         </div>
+                        
                         <div className='skill-box'>
                             <div className='skill-card'>
                                 <div className='skill-card-top bigger'>
@@ -104,23 +105,12 @@ class Skills extends Component {
                             <div className='skill-card'>
                                 <div className='skill-card-top'>
                                     <div className='skill-card-img'>
-                                        <img src={Mongoodb} alt='mongoodb' />
+                                        <img src={Firebase} alt='firebase' />
                                     </div>
-                                    <h1>MongoDB</h1>
+                                    <h1>Firebase</h1>
                                 </div>
                             </div>
                         </div>
-                        <div className='skill-box'>
-                            <div className='skill-card'>
-                                <div className='skill-card-top'>
-                                    <div className='skill-card-img'>
-                                        <img src={Javascript} alt='javascript' />
-                                    </div>
-                                    <h1>Javascript</h1>
-                                </div>
-                            </div>
-                        </div>
-                        
                         <div className='skill-box'>
                             <div className='skill-card'>
                                 <div className='skill-card-top'>
@@ -148,6 +138,16 @@ class Skills extends Component {
                                         <img src={Adobe} alt='adobexd' />
                                     </div>
                                     <h1>AdobeXD</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='skill-box'>
+                            <div className='skill-card'>
+                                <div className='skill-card-top'>
+                                    <div className='skill-card-img'>
+                                        <img src={Javascript} alt='javascript' />
+                                    </div>
+                                    <h1>Javascript</h1>
                                 </div>
                             </div>
                         </div>
