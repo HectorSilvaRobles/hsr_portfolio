@@ -50,7 +50,7 @@
     background: #FCFCFC;
     /* background: green; */
     /* height: 500px; */
-    width: 70vw;
+    width: 80vw;
     margin-top: 20px;
     margin-bottom: 50px;
     border-radius: 25px;
@@ -83,12 +83,11 @@
 }
 
 .project-option {
-    height: 50px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     /* margin-top: 30px; */
-    /* background: blue; */
 }
 .project-option > h1 {
     font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (2000 - 300)));
@@ -143,11 +142,12 @@
     overflow: hidden;
     margin-right: 40px;
     border-radius: 20px;;
-    box-shadow: 10px 0px 20px 1px rgba(11, 11, 11, 0.5);
+    box-shadow: 1px 0px 25px 1px rgba(11, 11, 11, 0.5);
 
 }
 .project-image > img {
     /* width: 100%; */
+    object-fit: cover;
     height: 100%;
 }
 
@@ -269,22 +269,26 @@
 
 /* Screen sizes width 999px - 700px */
 @media screen and (max-width: 999px ) and (min-width: 600px){
+    .projects {
+        margin: 0;
+        height: 1200px;
+    }
     .projects-div {
         width: 90%;
         justify-content: center;
         align-items: center;
-        height: 1200px;
-        
+        height: 75%;
     }
-
     
+    .projects-carousel {
+        height: 10%;
+    }
     .project-card {
         height: 100%;
     }
     .pc-real {
         flex-direction: column;
         height: 100%;
-        /* background: orange; */
     }
 
     .project-image {
@@ -306,10 +310,18 @@
         text-align: center
     }
 
+    
+    .p-bw-bottom {
+        margin-bottom: 20px;
+    }
     .p-bw-top, .p-bw-bottom {
         justify-content: center;
+
     }.p-bw-top > h1 {
         margin: 5px;
+    }
+    .project-buttons {
+        margin-bottom: 20px;
     }
 }
 
@@ -318,14 +330,22 @@
 @media screen and (max-width: 599px ){
     .projects-div {
         width: 95%;
-        height: 1200px;
+        height: 80%;
+    }
+    .projects-carousel {
+        margin: 0;
+        height: 10%;
+    }
+    .projects-carousel {
+        height: 70px;
+        /* background: green; */
     }
     .projects-title{
         height: 100px;
         width: 90%;
     }
     .projects {
-        /* height: 800px; */
+        height: 1100px;
         margin: 100px 0;
         /* background: red; */
     }
@@ -347,15 +367,11 @@
         margin: 5px;
         font-size: 22px;
     }
-
-    .projects-carousel {
-        height: 10%;
-        margin-top: 40px;
+    .project-option {
+        height: 70px;
     }
-
     .pc-real {
         flex-direction: column;
-        height: 100%;
     }
 
     .project-card {
@@ -368,9 +384,7 @@
         width: 95%;
         margin: 40px 0;
     }
-    .project-info > .slick-slider, .projects-info > .slick-initializer {
-        height: 100%;
-    }
+   
 
     .project-buttons {
         width: 100%;
@@ -383,6 +397,9 @@
     .project-buttons > button {
         width: 95%;
         height: 45%;
+    }
+    .p-builtwith {
+        height: 100px;
     }
 }
 

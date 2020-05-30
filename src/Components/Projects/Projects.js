@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {FaPlay, FaGithub} from 'react-icons/fa'
 import covTracker from '../../media/covscreen.png'
+import abfutbol from '../../media/abfutbol.png'
+import sgsite from '../../media/sgscren.png'
 import reactIcon from '../../media/reacticon.png'
 import fireBaseIcon from '../../media/firebase.png'
 import nodeIcon from '../../media/nodeicon.png'
@@ -78,7 +80,7 @@ class Projects extends Component {
                                 <h1>COVID19 Tracker</h1>
                             </div>
                             <div className='project-option'>
-                                <h1>Son of Sam</h1>
+                                <h1>SG Construction</h1>
                             </div>
                         </Slider>
                     </div>
@@ -87,7 +89,7 @@ class Projects extends Component {
                             <div className='project-card'>
                                 <div className='pc-real'>
                                     <div className='project-image'>
-                                        <img src={covTracker} />
+                                        <img src={abfutbol} />
                                     </div>
                                     <div className='p-info'>
                                         <h1>AB Futbol Training</h1>
@@ -156,13 +158,13 @@ class Projects extends Component {
                                         </div>
                                         <div className='project-buttons'>
                                             <button className='view-live' >
-                                                <a href='http://covtracker.xyz'>
+                                                <a href='http://covtracker.xyz' target='_blank'>
                                                     <FaPlay size={25} />
                                                     <h1>View Live</h1>
                                                 </a>
                                             </button>
                                             <button className='view-code'>
-                                                <a href='https://github.com/HectorSilvaRobles/COVID19_Tracker'>
+                                                <a href='https://github.com/HectorSilvaRobles/COVID19_Tracker' target='_blank'>
                                                     <FaGithub size={30} />
                                                     <h1>View Code</h1>
                                                 </a>
@@ -174,11 +176,11 @@ class Projects extends Component {
                             <div className='project-card'>
                                 <div className='pc-real'>
                                     <div className='project-image'>
-                                        <img src={covTracker} />
+                                        <img src={sgsite} />
                                     </div>
                                     <div className='p-info'>
-                                        <h1>COVID-19 Tracker</h1>
-                                        <p>This is the description for the COVID-19 live tracker. This should be at least 3 sentences. So write something simple, short, and good. </p>
+                                        <h1>Silva-Garcia Construction</h1>
+                                        <p>I built a landing page for Silva-Garcia Construction. The goal was to showcase their services and collect leads as well.</p>
                                         <div className='p-builtwith'>
                                             <div className='p-bw-top'>
                                                 <h1>Built With</h1>
@@ -188,20 +190,20 @@ class Projects extends Component {
                                                     <img src={reactIcon} alt='react' />
                                                 </div>
                                                 <div className='tech-icon'>
-                                                    <img src={fireBaseIcon} alt='firebase' />
+                                                    <img src={nodeIcon} alt='node' />
                                                 </div>
                                             </div>
                                             
                                         </div>
                                         <div className='project-buttons'>
                                             <button className='view-live' >
-                                                <a href='http://covtracker.xyz'>
+                                                <a href='https://sg-site-1.herokuapp.com/' target='_blank'>
                                                     <FaPlay size={25} />
                                                     <h1>View Live</h1>
                                                 </a>
                                             </button>
                                             <button className='view-code'>
-                                                <a href='https://github.com/HectorSilvaRobles/COVID19_Tracker'>
+                                                <a href='https://github.com/HectorSilvaRobles/sg_landingpage/' target="_blank">
                                                     <FaGithub size={30} />
                                                     <h1>View Code</h1>
                                                 </a>
