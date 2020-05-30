@@ -67,7 +67,7 @@
     align-items: center;
 }
 
-.about-links > button {
+.about-links > button  {
     height: 80%;
     width: 25%;
     border: none;
@@ -75,9 +75,26 @@
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    cursor: pointer;
+}
+.about-links > button > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;;
+
+}
+.about-links > button:active, .about-links > button:focus {
+    outline: none;
 }
 
-.linkedin {
+.about-links > button > a > svg {
+    color: white;
+}
+
+.linkedin{
     background: #2867B2;
     color: white;
 }
@@ -85,7 +102,13 @@
     background: #FD4805;
     color: white
 }
-.linkedin > h1, .github > h1, .resume > h1 {
+.linkedin > a > h1, .resume > a >h1 {
+    color:white;
+}
+.github > a > h1, .github > a > svg {
+    color: black !important;
+}
+.linkedin > a > h1, .github > a> h1, .resume >a > h1 {
     margin-left: 10px;
     font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1800 - 300)));
 }
@@ -97,7 +120,7 @@
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 999px){
     .about-body > p {
         width: 90%;
     }
@@ -114,6 +137,25 @@
     }
 }
 
+@media screen and (max-width: 999px) and (min-width: 601px){
+    .about-title {
+        height: 150px;
+    }
+
+    .about-body {
+        margin-top: 0px !important;
+    }
+
+    .about-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-links {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .about-links {
         flex-direction: column;
@@ -127,6 +169,9 @@
     .about-body {
         height: 80%;
         margin-top: 0;
+    }
+    .about-title {
+        height: 100px;
     }
 }
 
