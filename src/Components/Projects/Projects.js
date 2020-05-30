@@ -179,7 +179,7 @@ class Projects extends Component {
                                         <img src={sgsite} />
                                     </div>
                                     <div className='p-info'>
-                                        <h1>Silva-Garcia Construction</h1>
+                                        <h1>SG Construction</h1>
                                         <p>I built a landing page for Silva-Garcia Construction. The goal was to showcase their services and collect leads as well.</p>
                                         <div className='p-builtwith'>
                                             <div className='p-bw-top'>
