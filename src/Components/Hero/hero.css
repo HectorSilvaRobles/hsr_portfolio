@@ -4,8 +4,7 @@
 }
 
 .hero-section1 {
-    /* background: red; */
-    height: 800px;
+    height: 700px;
     width: 100%;
     display: flex;
     justify-content: center;
