@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {FaPlay, FaGithub} from 'react-icons/fa'
 import covTracker from '../../media/covscreen.png'
-import abfutbol from '../../media/abfutbol.png'
+import abfutbol from '../../media/abfutbolt.png'
 import sgsite from '../../media/sgscren.png'
 import reactIcon from '../../media/reacticon.png'
 import fireBaseIcon from '../../media/firebase.png'
@@ -20,9 +20,6 @@ class Projects extends Component {
         this.state = {
             nav1: null,
             nav2: null,
-            redirect: false,
-            covTrackerSite: false,
-            covTrackerGit: false,
         }
     }
 

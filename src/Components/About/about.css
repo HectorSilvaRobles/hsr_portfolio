@@ -47,6 +47,13 @@
     width: 250px;
     background: white;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.about-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;;
 }
 
 .about-body > p {
@@ -175,9 +182,9 @@
     }
 }
 
-@media screen and (min-width: 1800px){
+@media screen and (min-width: 1900px){
     .about {
-        height: 100vh;
+        height: 1500px;
     }
 
     .about-body {
@@ -200,11 +207,11 @@
         align-items: center;
         border-radius: 100px;
     }
-    .about-links > button > h1 {
+    .about-links > button >a > h1 {
         font-size: 35px;
         margin-left: 20px;
     }
-    .about-links > button > svg {
+    .about-links > button > a> svg {
         width: 50px;
         height: 50px;
     }

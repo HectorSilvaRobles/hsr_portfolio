@@ -3,6 +3,7 @@ import './about.css'
 import {FaLinkedin, FaGithub} from 'react-icons/fa'
 import resumePDF from '../../media/resume.pdf'
 import {IoIosPaper} from 'react-icons/io'
+import headshot from '../../media/headshot.png'
 
 class About extends Component {
     render(){
@@ -14,7 +15,7 @@ class About extends Component {
                 </div>
                 <div className='about-body'>
                     <div className='about-image'>
-
+                        <img src={headshot} />
                     </div>
                     <p>Fueled with a passion to learn and eager to build awesome products. Looking to be part of team where I can contribute my skills and knowledge as a software engineer.</p>
                     <div className='about-links'>
