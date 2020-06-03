@@ -138,7 +138,7 @@ class Projects extends Component {
                                     </div>
                                     <div className='p-info'>
                                         <h1>COVID-19 Tracker</h1>
-                                        <p>This is the description for the COVID-19 live tracker. This should be at least 3 sentences. So write something simple, short, and good. </p>
+                                        <p>Developed a web application to visualize the data of COVID19 outbreaks throughout the world. It was built with the intention to inform users of the scale of the pandemic globally.</p>
                                         <div className='p-builtwith'>
                                             <div className='p-bw-top'>
                                                 <h1>Built With</h1>
