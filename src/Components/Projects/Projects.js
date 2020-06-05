@@ -155,7 +155,7 @@ class Projects extends Component {
                                         </div>
                                         <div className='project-buttons'>
                                             <button className='view-live' >
-                                                <a href='https:covtracker.xyz' target='_blank'>
+                                                <a href='https://covtracker.xyz' target='_blank'>
                                                     <FaPlay size={25} />
                                                     <h1>View Live</h1>
                                                 </a>
