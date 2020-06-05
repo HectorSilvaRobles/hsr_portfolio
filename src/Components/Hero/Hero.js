@@ -20,7 +20,7 @@ class Hero extends Component {
                         <img src={image1} />
                     </div>
                     <div className='hero-section1-info'>
-                        <h1>Hello, <br></br>Allow me to introduce myself.</h1>
+                        <h1>Please <br></br>Allow me to introduce myself.</h1>
                     </div>
                 </div>
                 <div className='hero-section2'>
