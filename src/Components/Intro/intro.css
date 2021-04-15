@@ -1,0 +1,99 @@
+.intro {
+    height: 500px;
+    width: 100%;
+    background: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.intro > div {
+    width: 85%;
+    height: 65%;
+    background: #313131;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-words {
+    height: 90%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-words > h1 {
+    font-size : 170px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0 40px;
+}
+
+.intro-words > h2 {
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;;
+    font-size: calc(35px + (45 - 35) * ((100vw - 1450px) / (1800 - 1450)));
+}
+
+.intro-button {
+    height: 90%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-button > button {
+    border-radius: 1000px;
+    border: none;
+    height: 80px;
+    width: 70%;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    background: linear-gradient(0.25turn, #0052ED,#00D65B );
+
+}
+.intro-button > button:focus {
+    outline: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .intro > div {
+        width: 95%;
+        height: 60%;
+        flex-direction: column;
+    }
+
+    .intro-words {
+        height: 60%;
+        width: 95%;
+        /* flex-direction: column; */
+    }
+    .intro-words > h1 {
+        font-size: calc(80px + (100 - 80) * ((100vw - 300px) / (900 - 300)));
+        margin: 0px;
+    }
+    .intro-words > h2 {
+        font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (900 - 300)));
+        text-align: center;
+        margin: 0px;
+    }
+    .intro-button {
+        width: 90%;
+        height: 30%;
+    }
+    .intro-button > button {
+        height: 50px;
+        width: 45%;
+        font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (900 - 300)));
+        
+    }
+}
