@@ -1,10 +1,10 @@
 .hero {
     width: 100%;
-    background: #f5f5f5;
+    background: #1C1C1C;
 }
 
 .hero-section1 {
-    height: 700px;
+    height: 850px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@
 
 .hero-section1-image {
     height: 70%;
-    width: 40%;
+    width: 42.5%;
     display: flex;
     justify-content: flex-end;
 }
@@ -26,266 +26,139 @@
 }
 
 .hero-section1-info {
-    /* background: pink; */
     height: 70%;
-    width: 45%;
+    width: 42.5%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .hero-section1-info > h1 {
-    font-size: calc(60px + (100 - 60) * ((100vw - 1000px) / (2000 - 1000)));
-    text-transform: uppercase;
-    padding-left: 50px;
-}
-
-
-
-.hero-section2 {
-    /* background: blue; */
-    height: 700px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.hero-section2-info {
-    /* background: red; */
-    height: 65%;
-    width:40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-.hero-section2-info > h1 {
-    margin: 0;
-    font-size: calc(60px + (100 - 60) * ((100vw - 1000px) / (2000 - 1000)));
-    text-transform: uppercase;
-}
-.hero-section2-info > h2 {
-    margin: 20px 0;
-    font-size: calc(30px + (50 - 30) * ((100vw - 1000px) / (2000 - 1000)));
-    font-weight: 500;
-    width: 80%;
+    font-size: calc(60px + (85 - 60) * ((100vw - 1450px) / (1800 - 1450)));
     text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+    color: white;
+    font-weight: bold;
+    line-height: 1.1;
+}
+.hero-section1-info > h2 {
+    font-size: calc(30px + (40 - 30) * ((100vw - 1450px) / (1800 - 1450)));
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 0;
+    color: #C3C3C3;
+    line-height: 1.1;
     font-style: italic;
 }
-.hero-section2-image {
-    height:65%;
-    width: 40%;
-    display: flex;
-    align-items: center;
-}
-.hero-section2-image > img {
+.hero-buttons {
     width: 100%;
-}
-
-.hero-section3 {
-    /* background: green; */
-    height: 900px;
-    width: 100%;
+    height: 20%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-.hero-section3-image {
-    /* background: orange; */
-    height: 25%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
+.hero-buttons > button{
+    height: 60%;
+    width: 30%;
+    cursor: pointer;
+    border: none;
+    margin-right: 50px;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.hero-buttons > button:focus {
+    outline: none;
 }
 
-.hero-section3-image > img {
-    /* width: 50vw; */
-    height: 100%;
+.hero-button-port {
+    background: linear-gradient(0.25turn, #C400FF,#0089ED );
+    color: white;
 }
-
-.hero-section3-info {
-    /* background: blue; */
-    height: 40%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-section3-info > h1 {
+.hero-button-resu > h1{
+    background: -webkit-linear-gradient(0.7turn, #C400FF,#0089ED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
     margin: 0;
-    font-size: calc(100px + (200 - 100) * ((100vw - 1000px) / (2000 - 1000)));
-    text-transform: uppercase;
-}
-.hero-section3-info > h2 {
-    margin: 0;
-    font-size: calc(30px + (50 - 30) * ((100vw - 1000px) / (2000 - 1000)));
-    font-weight: 500;
-    width: 90%;
-    text-transform: capitalize;
-    font-style: italic;
-    text-align: center;
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
     .hero-section1 {
-        /* background: blue; */
-        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
     .hero-section1-image {
-        height: 50%;
+        height: 40%;
         width: 95%;
+        background: red;
     }
     .hero-section1-image > img {
         width: 100%;
         object-fit: cover;
     }
     .hero-section1-info {
-        height: 30%;
-        width: 95%;
-        /* background: red; */
+        height: 35%;
+        width: 90%;
     }
     .hero-section1-info > h1 {
         padding: 0;
         text-align: center;
-        font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (600 - 300)));
+        font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (900 - 300)));
+        margin: 5px 0;
     }
-
-    .hero-section2 {
-        /* background: red; */
-        margin: 80px 0;
-        flex-direction: column;
-    }
-    .hero-section2-info {
-        width: 95%;
-        height: 30%;
-        /* background: orange; */
-        align-items: center;
-    }
-    .hero-section2-info > h1 {
+    .hero-section1-info > h2 {
+        font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (900 - 300)));
         text-align: center;
-        font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (600 - 300)));
-    }
-    .hero-section2-info > h2 {
-        text-align: center;
-        margin: 10px 0;
-        z-index: 1;
-        font-size: calc(25px + (30 - 25) * ((100vw - 300px) / (600 - 300)));
+        margin: 2.5px 0;
     }
 
-    .hero-section2-image {
-        height: 50%;
-        width: 95%;
-    }
-
-    .hero-section2-image > img {
-        width: 100%;
-    }
-
-    .hero-section3 {
-        height: 700px
-    }
-
-    .hero-section3-info {
-        height: 50%;
-        width: 95%;
-    }
-
-    .hero-section3-info > h1 {
-        text-align: center;
-        font-size: calc(60px + (100 - 60) * ((100vw - 300px) / (600 - 300)));
-    }
-
-    .hero-section3-info > h2 {
-        text-align: center;
-        margin: 10px 0;
-        font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (600 - 300)));
-    }
-
-    .hero-section3-image {
-        height: 25%;
-    }
-}
-
-
-
-@media screen and (max-width: 1000px) and (min-width: 601px){
-    .hero-section1 {
-        flex-direction: column-reverse;
-    }
-    .hero-section1-info {
+    .hero-buttons {
+        justify-content: space-between;
         width: 90%;
         height: 30%;
-    }
-    .hero-section1-info > h1 {
-        padding: 0;
-        text-align: center;
-        font-size: calc(55px + (60 - 55) * ((100vw - 601px) / (900 - 601)));
-    }
-    .hero-section1-image {
-        height: 60%;
-        width: 70%;
-        justify-content: center;
-    }
 
-    .hero-section1-image > img {
-        width: 500px;
     }
-
-    .hero-section2 {
-        flex-direction: column;
-        margin: 100px 0px;
-        height: 800px
-    }
-
-    .hero-section2-info {
-        width: 80%;
-        height: 25%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .hero-section2-info > h1 {
+    .hero-buttons > button {
         margin: 0;
-        font-size: calc(55px + (60 - 55) * ((100vw - 601px) / (900 - 601)));
+        width: 45%;
+        font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (900 - 300)));
     }
-    .hero-section2-info > h2 {
-        margin: 10px 0;
-        font-size: calc(25px + (35 - 25) * ((100vw - 601px) / (900 - 601)));
+    .hero-button-resu > h1 {
+        font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (900 - 300)));
     }
-
-    .hero-section2-image {
-        width: 70%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        object-fit: cover;;
-        margin-top: 50px;
-
-    }
-    .hero-section2-image > img {
-        width: 500px;
+    .hero-section1-info > h2 {
+        font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (900 - 300)));
     }
 
-    .hero-section3-image {
-        height:  20%;
-    }
+}
 
-    .hero-section3-info > h1 {
-        font-size: calc(70px + (100 - 70) * ((100vw - 601px) / (900 - 601)));
+
+
+@media screen and (max-width: 700px) and (min-width: 500px){
+    .hero-section1-info {
+        width: 85%;
     }
 }
 
-@media screen and (max-width: 1250px) and (min-width: 1001px){
+@media screen and (max-width: 900px) and (min-width: 701px) {
+    .hero-section1-info {
+        width: 70%;
+    }
+    .hero-section1-info > h1 {
+        font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (900 - 300)));
+    }
+}
+
+@media screen and (max-width: 1150px) and (min-width: 901px){
     .hero-section1 {
         height: 700px;
     }
     .hero-section1-info {
-        width: 40%;
+        width: 45%;
+        height: 60%;
         justify-content: center;
     }
 
@@ -299,22 +172,65 @@
         object-fit: cover;
     }
     .hero-section1-info > h1 {
-        font-size: calc(50px + (55 - 50) * ((100vw - 901px) / (1250 - 901)));
-        /* padding-left: 30px;; */
-
+        font-size: calc(44px + (50 - 44) * ((100vw - 901px) / (1150 - 901)));
+        margin: 5px 0;
+    }
+    .hero-section1-info > h2 {
+        font-size: calc(22px + (28 - 22) * ((100vw - 901px) / (1150 - 901)));
     }
 
-    .hero-section2 {
-        height: 700px;
+    .hero-buttons > button {
+        font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (900 - 300)));
     }
-    .hero-section2-image {
-        width: 40%;
+    .hero-button-resu > h1 {
+        font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (900 - 300)));
     }
 }
 
 
-@media screen and (min-width: 1900px){
-    .hero-section1, .hero-section2, .hero-section3 {
-        height: 1300px;
+@media screen and (max-width: 1450px) and (min-width: 1151px){
+    .hero-section1-info > h1 {
+        font-size: calc(50px + (60 - 50) * ((100vw - 1151px) / (1450 - 1151)));
+        margin: 5px 0;
+    }
+    .hero-section1-info > h2 {
+        font-size: calc(25px + (35 - 25) * ((100vw - 1151px) / (1450 - 1151)));
+    }
+    .hero-section1 {
+        height: 800px;
+    }
+    .hero-section1-info {
+        width: 45%;
+    }
+}
+
+
+@media screen and (min-width: 1700px){
+    .hero-section1 {
+        height: 950px;
+    }
+    .hero-section1-info > h1 {
+        font-size: calc(70px + (110 - 70) * ((100vw - 1701px) / (3000 - 1701)));
+        margin: 5px 0;
+    }
+    .hero-section1-info > h2 {
+        font-size: calc(35px + (55 - 35) * ((100vw - 1701px) / (3000 - 1701)));
+    }
+
+    .hero-buttons > button ,
+    .hero-button-resu > h1 {
+        font-size: calc(30px + (40 - 30) * ((100vw - 1701px) / (3000 - 1701)));
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .hero-section1 {
+        height: 1100px;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .hero-section1 {
+        height: 1250px;
     }
 }
